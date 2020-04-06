@@ -21,6 +21,15 @@ body {
   -webkit-user-select: none;
 }
 
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  bottom: calc(0px - env(safe-area-inset-bottom));
+}
+
 section {
   width: 100%;
   display: grid;
@@ -221,7 +230,6 @@ body {
   /* padding: 20px; */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
 /*@media (prefers-color-scheme: dark) {
