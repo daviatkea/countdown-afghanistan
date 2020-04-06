@@ -1,6 +1,7 @@
 :root {
   /* --bg: #e9e9df; */
-  --bg: #fdfff1;
+  /* --bg: #fdfff1; */
+  --bg: #fff;
   --c: #6d6d6d;
 }
 
@@ -26,18 +27,18 @@ section {
 }
 
 video {
-  height: 10vmin;
-  width: 15vmin;
+  height: 15vmin;
+  width: 20vmin;
   object-fit: contain;
 }
 
 .wc {
   position: relative;
   left: calc(var(--value) * 1%);
-  transform: translateX(-45%);
+  transform: translateX(-40%);
   order: -1;
   mix-blend-mode: darken;
-  filter: contrast(1.2);
+  /* filter: contrast(1.2); */
 }
 
 h1 {
@@ -108,8 +109,8 @@ progress[value] {
   border-radius: 2rem;
   border-radius: 0;
   border: 2px solid #566068;
-  transform: rotateX(60deg);
-  margin-top: -2.6rem;
+  transform: translateZ(-20px) rotateX(60deg);
+  margin-top: -2.2rem;
 }
 
 /* progress[value]:after {
@@ -147,7 +148,7 @@ progress[value]::-webkit-progress-value {
   grid: auto auto auto / 1fr;
   /* gap: 0.5rem; */
   align-items: center;
-  perspective: 600px;
+  perspective: 500px;
   /* transform-style: preserve-3d; */
 }
 
