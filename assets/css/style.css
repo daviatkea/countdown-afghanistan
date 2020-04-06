@@ -27,8 +27,8 @@ section {
 }
 
 video {
-  height: 15vmin;
-  width: 20vmin;
+  height: 20vmin;
+  width: 25vmin;
   object-fit: contain;
 }
 
