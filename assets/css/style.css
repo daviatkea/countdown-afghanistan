@@ -1,13 +1,6 @@
-/* @font-face {
-  font-family: "SupersonicRocketship";
-  font-display: swap;
-  src: url("../font/SupersonicRocketship.woff2") format("woff2");
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-} */
-
 :root {
-  --bg: #fff;
+  /* --bg: #e9e9df; */
+  --bg: #fdfff1;
   --c: #6d6d6d;
 }
 
@@ -32,10 +25,19 @@ section {
   gap: 1.5rem;
 }
 
-img {
-  height: 20vh;
-  width: 100%;
+video {
+  height: 10vmin;
+  width: 15vmin;
   object-fit: contain;
+}
+
+.wc {
+  position: relative;
+  left: calc(var(--value) * 1%);
+  transform: translateX(-45%);
+  order: -1;
+  mix-blend-mode: darken;
+  filter: contrast(1.2);
 }
 
 h1 {
@@ -45,9 +47,8 @@ h1 {
   text-align: center;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
-  font-family: "SupersonicRocketship", -apple-system, system-ui,
-    BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial,
-    sans-serif;
+  font-family: "progress", -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -56,8 +57,8 @@ h2 {
   font-size: 7.5vmin;
   text-align: center;
   font-weight: 300;
-  font-style: italic;
-  font-family: "Lato", sans-serif;
+  /* font-style: italic; */
+  font-family: "sergeant", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -71,20 +72,23 @@ ul {
 }
 
 li {
-  font-size: 3.75vmin;
+  font-size: 3vmin;
   list-style-type: none;
   padding: 2vmin;
   text-transform: uppercase;
   user-select: none;
   margin: 0 auto;
   line-height: 1.1;
+  font-family: "progress", sans-serif;
 }
 
 li span {
   display: block;
   font-size: 8vmin;
   font-weight: 700;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.1em;
+  color: #51654d;
+  font-family: "sergeant", sans-serif;
 }
 
 progress[value] {
@@ -94,11 +98,18 @@ progress[value] {
   border: none;
   width: 100%;
   height: 1.5rem;
+  height: 4rem;
   border-radius: 1rem;
   overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
+  padding: 6px;
+  border-radius: 2rem;
+  border-radius: 0;
+  border: 2px solid #566068;
+  transform: rotateX(60deg);
+  margin-top: -2.6rem;
 }
 
 /* progress[value]:after {
@@ -124,56 +135,39 @@ progress[value]::-moz-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-  /* background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  filter: contrast(2); */
-  /* background: repeating-linear-gradient(
-    -65deg,
-    var(--bg),
-    var(--bg) 4px,
-    #2ab673 4px,
-    #2ab673 20px
-  ); */
-  background: repeating-linear-gradient(
-    to right,
-    var(--bg),
-    var(--bg) 4px,
-    #2ab673 4px,
-    #2ab673 20px
-  );
-  transform: skewX(-25deg);
+  background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+  filter: contrast(2);
   transform-origin: 0 0;
+  border-radius: 0.5rem;
 }
 
 .progresswrapper {
   position: relative;
   display: grid;
+  grid: auto auto auto / 1fr;
+  /* gap: 0.5rem; */
   align-items: center;
-  padding: 6px;
-  border-radius: 2rem;
-  border: 1px solid #c1c1c1;
-}
-
-.progresswrapper > * {
-  grid-area: 1 / 1;
+  perspective: 600px;
+  /* transform-style: preserve-3d; */
 }
 
 .value {
-  /* font-weight: 700; */
-  font-style: italic;
-  padding: 0 0.2rem;
+  font-weight: 600;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", Arial, sans-serif;
+  padding: 0 0.25rem;
   font-size: 0.8em;
-  position: absolute;
-  top: calc(50% - 0.2rem);
+  position: relative;
   left: calc(var(--value) * 1%);
-  transform: translateY(-50%);
-  /* color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  mix-blend-mode: difference; */
-  color: var(--c);
-  background: #000;
+  color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+  /*color: var(--c);*/
+  order: 1;
+  place-self: start;
+  transform: translateX(-50%);
 }
 
 .countdown {
-  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 html,
@@ -184,17 +178,15 @@ body {
 body {
   display: grid;
   place-items: center;
-  /*background: url('https://images-na.ssl-images-amazon.com/images/I/71VWxgHLZfL._SY500_.jpg') 50% / cover;*/
   padding: 20px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   body {
     --bg: #000;
     --c: #fff;
-    /* background: #000; */
     color: #fff;
   }
-}
+}*/
