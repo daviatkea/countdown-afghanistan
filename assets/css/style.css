@@ -156,7 +156,7 @@ progress[value]::-webkit-progress-value {
   /* transform-style: preserve-3d; */
   background: var(--bg);
   margin: 0 -55px;
-  padding: 0 55px;
+  padding: 0 75px;
 }
 
 .value {
