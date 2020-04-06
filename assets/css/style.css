@@ -138,7 +138,7 @@ progress[value]::-webkit-progress-value {
   background: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   filter: contrast(2);
   transform-origin: 0 0;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 
 .progresswrapper {
