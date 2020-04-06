@@ -24,16 +24,16 @@ window.addEventListener("load", () => {
       pBarP.innerText = `${((q / d) * 100).toFixed(2)}%`;
       pWrap.style.setProperty("--value", Math.round((q / d) * 100));
 
-      (document.getElementById("days").innerText = Math.floor(distance / day)),
-        (document.getElementById("hours").innerText = Math.floor(
-          (distance % day) / hour
-        )),
-        (document.getElementById("minutes").innerText = Math.floor(
-          (distance % hour) / minute
-        )),
-        (document.getElementById("seconds").innerText = Math.floor(
-          (distance % minute) / second
-        ));
+      document.getElementById("days").innerText = Math.floor(distance / day);
+      // (document.getElementById("hours").innerText = Math.floor(
+      //   (distance % day) / hour
+      // )),
+      // (document.getElementById("minutes").innerText = Math.floor(
+      //   (distance % hour) / minute
+      // )),
+      // (document.getElementById("seconds").innerText = Math.floor(
+      //   (distance % minute) / second
+      // ));
 
       if (distance < 0) {
         clearInterval(x);

@@ -7,6 +7,7 @@
 
 body {
   background: var(--bg);
+  background: linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
 }
 
 *,
@@ -23,9 +24,7 @@ body {
 section {
   width: 100%;
   display: grid;
-  gap: 1.5rem;
-  max-width: 800px;
-  margin: 0 auto;
+  /* gap: 1.5rem; */
 }
 
 video,
@@ -69,7 +68,7 @@ h2 {
 
 ul {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   text-align: center;
   list-style: none;
   padding: 0;
@@ -77,12 +76,13 @@ ul {
 }
 
 li {
-  font-size: 4vmin;
+  font-size: 8vmin;
   list-style-type: none;
   padding: 2vmin;
   text-transform: uppercase;
   user-select: none;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin: 0 0.25em;
   line-height: 1;
   font-family: "progress", sans-serif;
 }
@@ -97,6 +97,10 @@ li span {
   background: url("../img/bg/mili.jpg") 0% 50% / cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+li:nth-child(1) span {
+  font-size: 40vmin;
 }
 
 li:nth-child(2) span {
@@ -127,7 +131,7 @@ progress[value] {
   padding: 6px;
   border-radius: 2rem;
   border-radius: 0;
-  border: 2px solid #566068;
+  border: 2px dashed #ab7147;
   transform: translateZ(-20px) rotateX(60deg);
   margin-top: -2.3rem;
 }
@@ -172,7 +176,19 @@ progress[value]::-webkit-progress-value {
   background: var(--bg);
   /* margin: 0 -55px; */
   padding: 0 6.5vmin;
+  background: #efd4a4 linear-gradient(to top, #f0a976, #efd4a4 74%, #fbfcfc 0);
 }
+
+/* .progresswrapper::before {
+  content: "";
+  width: 50vmin;
+  height: 50vmin;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/bg/desert.jpg") 50% 50% / contain no-repeat;
+  mix-blend-mode: multiply;
+} */
 
 .value {
   font-weight: 600;
@@ -190,7 +206,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .countdown {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(to top, #fbfcfc 0, #7bc0fb);
 }
 
 html,
@@ -201,7 +218,7 @@ body {
 body {
   display: grid;
   align-items: center;
-  padding: 20px;
+  /* padding: 20px; */
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
 }
