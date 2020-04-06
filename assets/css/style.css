@@ -24,6 +24,8 @@ section {
   width: 100%;
   display: grid;
   gap: 1.5rem;
+  width: min(100%, 800px);
+  margin: 0 auto;
 }
 
 video {
@@ -37,7 +39,7 @@ video {
   left: calc(var(--value) * 1%);
   transform: translateX(-40%);
   order: -1;
-  mix-blend-mode: darken;
+  mix-blend-mode: multiply;
   /* filter: contrast(1.2); */
 }
 
@@ -66,6 +68,7 @@ h2 {
 
 ul {
   display: flex;
+  justify-content: center;
   text-align: center;
   list-style: none;
   padding: 0;
@@ -79,13 +82,14 @@ li {
   text-transform: uppercase;
   user-select: none;
   margin: 0 auto;
-  line-height: 1.1;
+  margin: 1vmin;
+  line-height: 1;
   font-family: "progress", sans-serif;
 }
 
 li span {
   display: block;
-  font-size: 8vmin;
+  font-size: 12vmin;
   font-weight: 700;
   margin-bottom: 0.1em;
   color: #51654d;
@@ -110,7 +114,7 @@ progress[value] {
   border-radius: 0;
   border: 2px solid #566068;
   transform: translateZ(-20px) rotateX(60deg);
-  margin-top: -2.5rem;
+  margin-top: -2.3rem;
 }
 
 /* progress[value]:after {
@@ -151,8 +155,8 @@ progress[value]::-webkit-progress-value {
   perspective: 500px;
   /* transform-style: preserve-3d; */
   background: var(--bg);
-  margin: 0 -40px;
-  padding: 0 40px;
+  margin: 0 -55px;
+  padding: 0 55px;
 }
 
 .value {
@@ -181,7 +185,7 @@ body {
 
 body {
   display: grid;
-  place-items: center;
+  align-items: center;
   padding: 20px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
