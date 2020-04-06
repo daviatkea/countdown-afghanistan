@@ -1,10 +1,10 @@
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
 window.addEventListener("load", () => {
   const pWrap = document.querySelector(".progresswrapper");
   const pBar = document.querySelector("progress");
   const pBarP = document.querySelector(".value");
-
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
 
   const start = new Date("April 6 2020 12:59:59 GMT+0200"),
     end = new Date("May 19 2020 12:59:59 GMT+0200");
