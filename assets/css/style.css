@@ -28,7 +28,8 @@ section {
   margin: 0 auto;
 }
 
-video {
+video,
+img {
   height: 20vmin;
   width: 25vmin;
   object-fit: contain;
