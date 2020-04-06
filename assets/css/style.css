@@ -110,7 +110,7 @@ progress[value] {
   border-radius: 0;
   border: 2px solid #566068;
   transform: translateZ(-20px) rotateX(60deg);
-  margin-top: -2.2rem;
+  margin-top: -2.7rem;
 }
 
 /* progress[value]:after {
