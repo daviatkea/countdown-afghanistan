@@ -94,6 +94,21 @@ li span {
   margin-bottom: 0.1em;
   color: #51654d;
   font-family: "sergeant", sans-serif;
+  background: url("../img/bg/mili.jpg") 0% 50% / cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+li:nth-child(2) span {
+  background-position: 25% 50%;
+}
+
+li:nth-child(3) span {
+  background-position: 50% 50%;
+}
+
+li:nth-child(4) span {
+  background-position: 75% 50%;
 }
 
 progress[value] {
@@ -118,15 +133,15 @@ progress[value] {
 }
 
 /* progress[value]:after {
-  content: attr(value) "%";
-  font-weight: 700;
-  padding: 0 0.5rem;
-  font-size: 1.2em;
-  position: absolute;
-  left: calc(var(--value) * 1%);
-  transform: translateX(-100%);
-  color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
-  mix-blend-mode: difference;
+content: attr(value) "%";
+font-weight: 700;
+padding: 0 0.5rem;
+font-size: 1.2em;
+position: absolute;
+left: calc(var(--value) * 1%);
+transform: translateX(-100%);
+color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
+mix-blend-mode: difference;
 } */
 
 progress[value]::-webkit-progress-bar {
@@ -192,9 +207,9 @@ body {
 }
 
 /*@media (prefers-color-scheme: dark) {
-  body {
-    --bg: #000;
-    --c: #fff;
-    color: #fff;
-  }
+body {
+  --bg: #000;
+  --c: #fff;
+  color: #fff;
+}
 }*/
