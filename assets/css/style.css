@@ -110,7 +110,7 @@ progress[value] {
   border-radius: 0;
   border: 2px solid #566068;
   transform: translateZ(-20px) rotateX(60deg);
-  margin-top: -2.7rem;
+  margin-top: -2.5rem;
 }
 
 /* progress[value]:after {
@@ -150,6 +150,9 @@ progress[value]::-webkit-progress-value {
   align-items: center;
   perspective: 500px;
   /* transform-style: preserve-3d; */
+  background: var(--bg);
+  margin: 0 -40px;
+  padding: 0 40px;
 }
 
 .value {
