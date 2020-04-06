@@ -211,11 +211,12 @@ progress[value]::-webkit-progress-value {
 }
 
 html,
-body {
+body,
+.app {
   height: 100%;
 }
 
-body {
+.app {
   display: grid;
   align-items: center;
   /* padding: 20px; */
