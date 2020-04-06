@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   const pBar = document.querySelector("progress");
   const pBarP = document.querySelector(".value");
 
-  const start = new Date("April 6 2020 12:59:59 GMT+0200"),
+  const start = new Date("April 16 2020 12:59:59 GMT+0200"),
     end = new Date("May 19 2020 12:59:59 GMT+0200");
   today = new Date();
 
