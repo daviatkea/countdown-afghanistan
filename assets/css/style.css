@@ -89,7 +89,7 @@ li {
 
 li span {
   display: block;
-  font-size: 2.2em;
+  font-size: 2.9em;
   font-weight: 700;
   margin-bottom: 0.1em;
   color: #51654d;
@@ -170,8 +170,8 @@ progress[value]::-webkit-progress-value {
   perspective: 500px;
   /* transform-style: preserve-3d; */
   background: var(--bg);
-  margin: 0 -55px;
-  padding: 0 75px;
+  /* margin: 0 -55px; */
+  padding: 0 1.5em;
 }
 
 .value {
