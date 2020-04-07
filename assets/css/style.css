@@ -178,6 +178,7 @@ progress[value]::-webkit-progress-value {
   /* margin: 0 -55px; */
   padding: 0 6.5vmin;
   background: #efd4a4 linear-gradient(to top, #f0a976, #efd4a4 74%, #fbfcfc 0);
+  background: #efa876 linear-gradient(to top, #efa876, #efa876 74%, #f6d9cb 0);
 }
 
 /* .progresswrapper::before {
@@ -211,6 +212,7 @@ progress[value]::-webkit-progress-value {
 .countdown {
   padding-bottom: 4rem;
   background: linear-gradient(to top, #fbfcfc 0, #7bc0fb);
+  background: linear-gradient(to top, #f6d9cb 0, #f6d9cb);
 }
 
 html,
@@ -227,6 +229,7 @@ body,
     "Roboto", "Helvetica Neue", Arial, sans-serif;
   height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
+  background: linear-gradient(to top, #efa876 50%, #f6d9cb 0);
 }
 
 .app::before {
@@ -236,10 +239,11 @@ body,
   right: 5%;
   border-radius: 50%;
   background: #ffe66e;
+  background: #feaf74;
   height: 85px;
   width: 85px;
-  box-shadow: 0 0 30px #ffefa2;
-  filter: blur(1px);
+  /* box-shadow: 0 0 30px #ffefa2; */
+  /* filter: blur(1px); */
 }
 
 /*@media (prefers-color-scheme: dark) {
