@@ -92,6 +92,7 @@ li span {
   font-size: 2.9em;
   font-weight: 700;
   margin-bottom: 0.1em;
+  margin-bottom: 0;
   color: #51654d;
   font-family: "sergeant", sans-serif;
   background: url("../img/bg/mili.jpg") 0% 50% / cover;
