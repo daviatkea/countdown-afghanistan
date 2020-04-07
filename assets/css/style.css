@@ -32,13 +32,15 @@ video,
 img {
   height: 20vmin;
   width: 25vmin;
+  height: 30vmin;
+  width: 22vmin;
   object-fit: contain;
 }
 
 .wc {
   position: relative;
   left: calc(var(--value) * 1%);
-  transform: translateX(-35%);
+  transform: translateX(-30%);
   order: -1;
   /* mix-blend-mode: multiply; */
   /* filter: contrast(1.2); */
@@ -180,18 +182,29 @@ progress[value]::-webkit-progress-value {
   padding: 0 6.5vmin;
   background: #efd4a4 linear-gradient(to top, #f0a976, #efd4a4 74%, #fbfcfc 0);
   background: #efa876 linear-gradient(to top, #efa876, #efa876 74%, #f6d9cb 0);
+  overflow: hidden;
 }
 
-/* .progresswrapper::before {
+.progresswrapper::before {
   content: "";
-  width: 50vmin;
-  height: 50vmin;
+  width: 100%;
+  height: 40%;
   position: absolute;
   left: 0;
   top: 0;
-  background: url("../img/bg/desert.jpg") 50% 50% / contain no-repeat;
-  mix-blend-mode: multiply;
-} */
+  background: url(../img/bg/elems.png);
+  background-position: 0% 0%;
+  background-size: cover;
+  background-repeat: repeat no-repeat;
+  transform: translate3d(100%, 0, 0);
+  animation: bg 240s -60s infinite linear;
+}
+
+@keyframes bg {
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
 
 .value {
   font-weight: 600;
