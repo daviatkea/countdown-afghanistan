@@ -225,8 +225,19 @@ body,
     "Roboto", "Helvetica Neue", Arial, sans-serif;
   height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
-  background: radial-gradient(circle at 82% 5%, #ffe66e 10%, transparent 0),
-    linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  border-radius: 50%;
+  background: #ffe66e;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 0 40px #ffefa2;
+  filter: blur(1px);
 }
 
 /*@media (prefers-color-scheme: dark) {
