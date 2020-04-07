@@ -236,8 +236,15 @@ body,
   background: #ffe66e;
   height: 85px;
   width: 85px;
-  box-shadow: 0 0 40px #ffefa2;
+  box-shadow: 0 0 20px #ffefa2;
   filter: blur(1px);
+  animation: sun 5s infinite alternate ease-in-out;
+}
+
+@keyframes sun {
+  to {
+    box-shadow: 0 0 50px #ffefa2;
+  }
 }
 
 /*@media (prefers-color-scheme: dark) {
