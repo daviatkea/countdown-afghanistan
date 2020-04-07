@@ -196,14 +196,16 @@ progress[value]::-webkit-progress-value {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif;
   padding: 0 0.25rem;
-  font-size: 0.8em;
+  font-size: 1.2em;
   position: relative;
   left: calc(var(--value) * 1%);
   color: hsl(calc((var(--value) / 100) * 90), 50%, 50%);
   /*color: var(--c);*/
   order: 1;
   place-self: start;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateZ(-30px) rotateX(55deg);
+  margin-top: -0.5rem;
+  mix-blend-mode: multiply;
 }
 
 .countdown {
