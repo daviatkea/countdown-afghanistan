@@ -203,7 +203,7 @@ progress[value]::-webkit-progress-value {
   /*color: var(--c);*/
   order: 1;
   place-self: start;
-  transform: translateX(-50%) translateZ(-30px) rotateX(55deg);
+  transform: translateX(-50%) translateZ(-20px) rotateX(60deg);
   margin-top: -0.5rem;
   mix-blend-mode: multiply;
 }
