@@ -182,7 +182,7 @@ progress[value]::-webkit-progress-value {
   padding: 0 6.5vmin;
   background: #efd4a4 linear-gradient(to top, #f0a976, #efd4a4 74%, #fbfcfc 0);
   background: #efa876 linear-gradient(to top, #efa876, #efa876 74%, #f6d9cb 0);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .progresswrapper::before {
@@ -244,6 +244,7 @@ body,
   height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
   background: linear-gradient(to top, #efa876 50%, #f6d9cb 0);
+  overflow: hidden;
 }
 
 .app::before {
