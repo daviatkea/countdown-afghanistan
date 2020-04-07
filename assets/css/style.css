@@ -39,7 +39,7 @@ img {
   left: calc(var(--value) * 1%);
   transform: translateX(-40%);
   order: -1;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   /* filter: contrast(1.2); */
 }
 
