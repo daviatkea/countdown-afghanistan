@@ -225,6 +225,8 @@ body,
     "Roboto", "Helvetica Neue", Arial, sans-serif;
   height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
+  background: radial-gradient(circle at 100% 0%, #ffe66e 10%, transparent 0),
+    linear-gradient(to top, #f0a976 50%, #7bc0fb 0);
 }
 
 /*@media (prefers-color-scheme: dark) {
