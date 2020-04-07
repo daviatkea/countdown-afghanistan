@@ -234,8 +234,8 @@ body,
   right: 5%;
   border-radius: 50%;
   background: #ffe66e;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   box-shadow: 0 0 40px #ffefa2;
   filter: blur(1px);
 }
