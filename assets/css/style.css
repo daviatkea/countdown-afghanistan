@@ -37,7 +37,7 @@ img {
 .wc {
   position: relative;
   left: calc(var(--value) * 1%);
-  transform: translateX(-40%);
+  transform: translateX(-35%);
   order: -1;
   /* mix-blend-mode: multiply; */
   /* filter: contrast(1.2); */
@@ -134,7 +134,7 @@ progress[value] {
   border-radius: 0;
   border: 2px dashed #ab7147;
   transform: translateZ(-20px) rotateX(60deg);
-  margin-top: -2.3rem;
+  margin-top: -2.2rem;
 }
 
 /* progress[value]:after {
