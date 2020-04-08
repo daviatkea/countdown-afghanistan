@@ -218,7 +218,7 @@ progress[value]::-webkit-progress-value {
 }
 
 svg.tree {
-  height: 8vmin;
+  height: 11vmin;
   top: 12%;
   animation-duration: 120s;
   animation-delay: -60s;
