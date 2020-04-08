@@ -137,7 +137,7 @@ progress[value] {
   border-radius: 2rem;
   border-radius: 0;
   border: 2px dashed #ab7147;
-  transform: translateZ(-20px) rotateX(70deg);
+  transform: translateZ(-20px) rotateX(65deg);
   margin-top: -2.2rem;
 }
 
@@ -248,7 +248,7 @@ svg.cactus {
   /*color: var(--c);*/
   order: 1;
   place-self: start;
-  transform: translateX(-50%) translateZ(-20px) rotateX(70deg);
+  transform: translateX(-50%) translateZ(-20px) rotateX(65deg);
   margin-top: -0.5rem;
   mix-blend-mode: multiply;
 }
