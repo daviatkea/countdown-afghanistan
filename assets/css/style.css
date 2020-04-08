@@ -209,7 +209,7 @@ progress[value]::-webkit-progress-value {
 
 .progresswrapper svg {
   position: absolute;
-  top: 2%;
+  top: 4%;
   left: 100vw;
   height: 17vmin;
   width: auto;
