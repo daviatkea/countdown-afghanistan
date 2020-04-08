@@ -215,8 +215,8 @@ progress[value]::-webkit-progress-value {
   height: 17vmin;
   width: auto;
   will-change: transform;
-  filter: blur(0.4px);
-  animation: bg2 60s infinite linear;
+  filter: blur(0.2px);
+  animation: bg2 90s infinite linear;
 }
 
 svg.tree {
@@ -224,7 +224,7 @@ svg.tree {
   top: 12%;
   animation-duration: 120s;
   animation-delay: -60s;
-  filter: blur(0.2px);
+  filter: blur(0.4px);
 }
 
 svg.cactus {
