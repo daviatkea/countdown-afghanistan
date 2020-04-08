@@ -183,7 +183,7 @@ progress[value]::-webkit-progress-value {
   padding: 0 6.5vmin;
   background: #efd4a4 linear-gradient(to top, #f0a976, #efd4a4 74%, #fbfcfc 0);
   background: #efa876
-    linear-gradient(to top, #efa876, hsla(25, 79%, 75%, 1) 74%, #f6d9cb 0);
+    linear-gradient(to top, #efa876, hsla(25, 79%, 77%, 1) 74%, #f6d9cb 0);
   /* overflow: hidden; */
 }
 
@@ -210,7 +210,7 @@ progress[value]::-webkit-progress-value {
 
 .progresswrapper svg {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 100vw;
   height: 17vmin;
   width: auto;
@@ -224,7 +224,7 @@ svg.tree {
   top: 12%;
   animation-duration: 120s;
   animation-delay: -60s;
-  filter: blur(0.4px);
+  filter: blur(0.3px);
 }
 
 svg.cactus {
