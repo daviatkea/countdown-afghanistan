@@ -1,11 +1,17 @@
-const staticAssets = ["./", "./assets/css/style.css", "./assets/js/index.js"];
+const staticAssets = [
+  "./",
+  "./assets/css/style.css",
+  "./assets/js/index.js",
+  "./assets/font/*",
+  "./assets/img/*",
+];
 
-self.addEventListener("install", async event => {
+self.addEventListener("install", async (event) => {
   const cache = await caches.open("static-cache");
   cache.addAll(staticAssets);
 });
 
-self.addEventListener("fetch", event => {
+self.addEventListener("fetch", (event) => {
   const req = event.request;
   const url = new URL(req.url);
 

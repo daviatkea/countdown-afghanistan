@@ -232,7 +232,7 @@ svg.cactus {
 
 @keyframes bg2 {
   100% {
-    transform: translate3d(calc(-100vw - 100%), 0, 0);
+    transform: translate3d(calc(-100vw - 100%), 0, 0) rotateX(20deg);
   }
 }
 
