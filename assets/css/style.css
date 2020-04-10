@@ -312,6 +312,7 @@ body {
   color: #0f0e16;
 }
 
-#cc:active {
-  background: #db8e5c33;
+#cc:active,
+#cc:hover {
+  background: #db8e5c77;
 }
