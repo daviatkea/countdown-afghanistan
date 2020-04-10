@@ -310,6 +310,7 @@ body {
   border: 1px solid #db8e5c;
   background: transparent;
   color: #0f0e16;
+  cursor: pointer;
 }
 
 #cc:active,
