@@ -311,3 +311,7 @@ body {
   background: transparent;
   color: #0f0e16;
 }
+
+#cc:active {
+  background: #db8e5c33;
+}
