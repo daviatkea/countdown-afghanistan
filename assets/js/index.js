@@ -45,3 +45,18 @@ window.addEventListener("load", () => {
       }
     }, second);
 });
+
+const images = ["mwc4", "girl", "bugs", "dance"];
+
+const container = document.querySelector(".wc"),
+  btn = document.querySelector("button"),
+  url = "./assets/img/";
+
+let currentImg = 0;
+
+function clickHandler() {
+  currentImg = (currentImg + 1) % images.length;
+  container.src = `${url}${images[currentImg]}.gif`;
+}
+
+btn.addEventListener("click", clickHandler);

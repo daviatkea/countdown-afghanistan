@@ -299,3 +299,15 @@ body {
   color: #fff;
 }
 }*/
+
+#cc {
+  position: absolute;
+  bottom: 10vmin;
+  left: 50%;
+  padding: 0.85rem 1rem;
+  transform: translateX(-50%);
+  border-radius: 8px;
+  border: 1px solid #db8e5c;
+  background: transparent;
+  color: #0f0e16;
+}
