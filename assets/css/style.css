@@ -216,6 +216,7 @@ progress[value]::-webkit-progress-value {
   width: auto;
   will-change: transform;
   filter: blur(0.2px);
+  transform: translate3d(0, 0, -20px);
   animation: bg2 90s infinite linear;
 }
 
@@ -232,7 +233,7 @@ svg.cactus {
 
 @keyframes bg2 {
   100% {
-    transform: translate3d(calc(-100vw - 100%), 0, 0);
+    transform: translate3d(calc(-100vw - 100%), 0, -20px);
   }
 }
 
