@@ -312,10 +312,9 @@ body {
   color: #0f0e16;
   cursor: pointer;
   -webkit-tap-highlight-color: #db8e5c;
-  touch-action: none;
+  touch-action: manipulation;
 }
 
-#cc:active,
-#cc:hover {
+#cc:active {
   background: #db8e5c;
 }
