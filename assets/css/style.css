@@ -311,6 +311,7 @@ body {
   background: transparent;
   color: #0f0e16;
   cursor: pointer;
+  -webkit-tap-highlight-color: #db8e5c77;
 }
 
 #cc:active,
