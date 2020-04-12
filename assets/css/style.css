@@ -9,6 +9,7 @@ body {
   background: var(--bg);
   background: #f0a976;
   background: #efa876;
+  background: linear-gradient(to top, #efa876 50%, #f6d9cb 0);
 }
 
 *,
