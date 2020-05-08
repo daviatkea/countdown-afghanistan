@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   const pBarP = document.querySelector(".value");
 
   const start = new Date("April 6 2020 12:59:59 GMT+0200"),
-    end = new Date("May 18 2020 23:59:59 GMT+0200");
+    end = new Date("May 19 2020 16:59:59 GMT+0200");
   today = new Date();
 
   const second = 1000,
