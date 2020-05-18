@@ -15,9 +15,9 @@
       content="black-translucent"
     />
     <link rel="preload" href="mwc4.gif" as="image" />
-    <link rel="preload" href="girl.gif" as="image" />
+    <!-- <link rel="preload" href="girl.gif" as="image" />
     <link rel="preload" href="bugs.gif" as="image" />
-    <link rel="preload" href="dance.gif" as="image" />
+    <link rel="preload" href="dance.gif" as="image" /> -->
     <link
       rel="preload"
       href="./assets/font/progress.woff2"
@@ -64,11 +64,13 @@
     <div class="app">
       <section>
         <article class="countdown">
+          <h1></h1>
+          <img src="./assets/img/h.gif" alt="" class="gif" hidden />
           <ul>
-            <li><span id="days"></span>dage tilbage</li>
-            <!-- <li><span id="hours"></span>Hours</li>
-        <li><span id="minutes"></span>Minutes</li> -->
-            <!-- <li><span id="seconds"></span>Seconds</li> -->
+            <!-- <li><span id="days"></span></li> -->
+            <li><span id="hours"></span>Timer</li>
+            <li><span id="minutes"></span>Minutter</li>
+            <li><span id="seconds"></span>Sekunder</li>
           </ul>
         </article>
         <div class="progresswrapper">

@@ -80,7 +80,7 @@ ul {
 }
 
 li {
-  font-size: 8vmin;
+  /* font-size: 8vmin; */
   list-style-type: none;
   padding: 2vmin;
   text-transform: uppercase;
@@ -94,6 +94,7 @@ li {
 li span {
   display: block;
   font-size: 2.9em;
+  font-size: 4em;
   font-weight: 700;
   margin-bottom: 0.1em;
   margin-bottom: 0;
@@ -104,9 +105,9 @@ li span {
   -webkit-background-clip: text;
 }
 
-li:nth-child(1) span {
+/* li:nth-child(1) span {
   font-size: 40vmin;
-}
+} */
 
 li:nth-child(2) span {
   background-position: 25% 50%;
@@ -118,6 +119,11 @@ li:nth-child(3) span {
 
 li:nth-child(4) span {
   background-position: 75% 50%;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
 }
 
 progress[value] {

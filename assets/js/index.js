@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   const pBarP = document.querySelector(".value");
 
   const start = new Date("April 6 2020 12:59:59 GMT+0200"),
-    end = new Date("May 19 2020 16:59:59 GMT+0200");
+    end = new Date("May 19 2020 14:49:59 GMT+0200");
   today = new Date();
 
   const second = 1000,
@@ -27,21 +27,24 @@ window.addEventListener("load", () => {
       pBarP.innerText = `${((q / d) * 100).toFixed(2)}%`;
       pWrap.style.setProperty("--value", Math.round((q / d) * 100));
 
-      document.getElementById("days").innerText = Math.floor(distance / day);
-      // (document.getElementById("hours").innerText = Math.floor(
-      //   (distance % day) / hour
-      // )),
-      // (document.getElementById("minutes").innerText = Math.floor(
-      //   (distance % hour) / minute
-      // )),
-      // (document.getElementById("seconds").innerText = Math.floor(
-      //   (distance % minute) / second
-      // ));
+      // document.getElementById("days").innerText = Math.floor(distance / day);
+      (document.getElementById("hours").innerText = Math.floor(
+        (distance % day) / hour
+      )),
+        (document.getElementById("minutes").innerText = Math.floor(
+          (distance % hour) / minute
+        )),
+        (document.getElementById("seconds").innerText = Math.floor(
+          (distance % minute) / second
+        ));
 
       if (distance < 0) {
         clearInterval(x);
         document.querySelector(".countdown ul").style.display = "none";
-        document.querySelector("h1").textContent = "Freedom!";
+        document.querySelector("h1").textContent = "Hjemme!";
+        document.querySelector(".countdown img").hidden = false;
+        document.querySelector(".progresswrapper").style.display = "none";
+        document.querySelector("button").style.display = "none";
       }
     }, second);
 });
